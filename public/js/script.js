@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // DO NOT TOUCH THIS LINE BELOW
-    $('.mdb-select').materialSelect();
+    // $('.mdb-select').materialSelect();
 
 
 
@@ -27,8 +27,9 @@ $(document).ready(function () {
     $(".searchForm").on("submit", function (event) {
         event.preventDefault();
   
-        var hood_id = $(this).children(".hood_id").val();
-        console.log(hood_id)
+        var neighborhood = $(this).children(".neighborhood").val();
+
+        console.log("result", neighborhood)
         // $.ajax({
         //     method: "GET",
         //     url: "/crimewatch/" + hood_id

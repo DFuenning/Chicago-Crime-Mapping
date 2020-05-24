@@ -21,13 +21,13 @@ router.get("/report", function(req, res) {
   router.post("/crimewatch/create", function (req, res) {
     console.log(res)
     report.create(req.body.neighborhood, req.body.date, req.body.police_called, req.body.type, req.body.notes, function(result) {
-      res.redirect("/file");
+      res.redirect("file");
     });
   });
 
 
-  router.get("/crimewatch", function(req, res) {
-    burger.all(function(hoodId) {
+  router.get("/crimewatch/file", function(req, res) {
+   neighborhood.all(function(hoodId) {
       var hbsObject = {
         hood_id: hoodId
       };
