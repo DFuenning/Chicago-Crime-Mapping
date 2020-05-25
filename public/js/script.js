@@ -27,9 +27,9 @@ $(document).ready(function () {
     $(".searchForm").on("submit", function (event) {
         event.preventDefault();
   
-        var neighborhood = $(this).children(".neighborhood").val();
+        // var neighborhood = $(this).children(".neighborhood").val();
 
-        console.log("result", neighborhood)
+        console.log(event)
         // $.ajax({
         //     method: "GET",
         //     url: "/crimewatch/" + hood_id
