@@ -20,8 +20,11 @@ router.get("/report", function (req, res) {
 router.get("/file", function (req, res) {
   res.render("file");
 });
-router.get("/map", function (req, res) {
+
+router.get("/map/:neighborhood", function (req, res) {
+  report.search(req.body.neighborhood, function(result) {
   res.render("map");
+  });
 });
 
 router.post("/crimewatch/create", function (req, res) {
@@ -41,6 +44,7 @@ router.get("/crimewatch/report", function (req, res) {
     res.render("file", hbsObject);
   });
 });
+
 
 
 

@@ -9,8 +9,6 @@ var report = {
     });
   },
 
- 
-
   //NEEDS UPDATING - DEREK
   create: function (hood, date, police, type, notes, cb) {
     orm.create("crimes_reported", [
@@ -19,6 +17,10 @@ var report = {
       hood, date, police, type, notes
     ], cb);
   },
+
+  search: function (hood, cb) {
+    orm.search("crimes_info", hood, cb)
+  }
 
 };
 

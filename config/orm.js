@@ -36,6 +36,7 @@ var orm = {
       console.log(result)
     });
   },
+  
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
@@ -56,6 +57,19 @@ var orm = {
       cb(result);
     });
   },
+  
+  search: function(table, hood, cb) {
+    var queryString = "SELECT `crime_lat`, `crime_long`, `hood_lat`, `hood_long` FROM " + table +
+    " WHERE neighborhood = '?'"
+
+    connection.query(queryString, hood, function(err, result) {
+      if (err) {
+        throw err;
+      }
+      
+      cb(result)
+    });
+  }
   
 
 };
