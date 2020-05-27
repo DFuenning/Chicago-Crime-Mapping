@@ -20,10 +20,16 @@ router.get("/report", function (req, res) {
 router.get("/file", function (req, res) {
   res.render("file");
 });
+router.get("/map", function (req, res) {
+  res.render("map");
+});
 
-router.get("/map/:neighborhood", function (req, res) {
-  report.search(req.body.neighborhood, function(result) {
-  res.render("file");
+router.get("/map/neighborhood", function (req, res) {
+  console.log(req.query);
+  report.search(req.query.neighborhood, function(
+    
+  ) {
+  res.render("map");
   });
 });
 
