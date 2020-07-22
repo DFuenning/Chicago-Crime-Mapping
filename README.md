@@ -8,6 +8,6 @@ Crime Watch is an app designed to give users the ability to view violent crimes 
 I designed the site, helped create and seed the database, and I also worked with Google Maps API and was able to create a responsive map displaying all crime data we had available
 
 ## Technology Used	
-Handlebars, Bootstrap, CSS, JavaScript, Google Maps API, Sequelize, & SQL.   
+Handlebars, Bootstrap, CSS, JavaScript, Google Maps API, Sequelize, & MySQL.   
 
 ![Alt text](public/images/crimemap.PNG?raw=true "Screen Shot")
