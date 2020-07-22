@@ -10,3 +10,4 @@ I designed the site, helped create and seed the database, and I also worked with
 ## Technology Used	
 Handlebars, Bootstrap, CSS, JavaScript, Google Maps API, Sequelize, & SQL.   
 
+![Alt text](public/images/crimemap.PNG?raw=true "Screen Shot")
